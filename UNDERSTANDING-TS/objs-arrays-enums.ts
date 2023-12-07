@@ -77,7 +77,7 @@ const product = {
 // }
 // So you have an object type in an object type so to say.
 
-// Arrays -->
+// Array Types -->
 let favoriteActivities1: string[];
 // favoriteActivities1 = "Sports"; // Type 'string' is not assignable to type 'string[]'
 // favoriteActivities1 = ["Sports", 1]; // Type 'number' is not assignable to type 'string'
@@ -132,7 +132,7 @@ console.log(person.role); // (2) [2, 'author']
 person.role.push("admin"); // Because this is an 'Exception' which is allowed on Tuple, despites 'role' is supposed to have exactlt TWO elements.
 console.log(person.role); // (3) [2, 'author', 'admin']
 
-// Enum type -->
+// Enum Types -->
 // enum { <set of human readable Identifiers> }
 // Gives an enumerated list of global constant identifiers.
 
