@@ -1,6 +1,6 @@
 console.log("Your code goes here...");
 
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
+function add1(n1: number, n2: number, showResult: boolean, phrase: string) {
   // if(typeof n1 !== 'number'|| typeof n2 !== 'number'){
   //   throw new Error('Incorrect Input')
   // } // JS way of type checking
@@ -22,6 +22,6 @@ let number4: number;
 number4 = 10; // understands as "let number4: number"
 // number4 = "10"; // Error: Type 'string' is not assignable to type 'number'
 
-add(number1, number2, printResult, resultPhrase);
-// const result = add(number1, number2, printResult);
+add1(number1, number2, printResult, resultPhrase);
+// const result = add1(number1, number2, printResult);
 // console.log(result);
