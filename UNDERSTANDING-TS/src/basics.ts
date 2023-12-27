@@ -1,3 +1,5 @@
+// Section 2: TypeScript Basics & Basic Types
+
 console.log("Your code goes here...");
 
 function add1(n1: number, n2: number, showResult: boolean, phrase: string) {

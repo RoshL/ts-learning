@@ -1,3 +1,5 @@
+// Section 2: TypeScript Basics & Basic Types
+
 // Union Types -->
 function combine(
   input1: number | string,
@@ -51,7 +53,7 @@ So we defined a third parameter 'resultConversion' of type string, BUT defined i
 
 // Type Aliases/Custom Types -->
 /* 
-When working with 'union types', it can be cumbersome to always repeat the union type.
+When working with 'union types', it can be cumbersome to always repeat the same union type.
 You might want to create a new type which can be replaced with our union type.
 
 FIX: You can create an alias, with 'type' keyword.

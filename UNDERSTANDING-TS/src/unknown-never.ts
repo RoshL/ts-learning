@@ -1,3 +1,5 @@
+// Section 2: TypeScript Basics & Basic Types
+
 // The "unknown" Type -->
 let userInput: unknown;
 let userName: string;

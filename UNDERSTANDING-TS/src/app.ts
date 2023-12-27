@@ -1,3 +1,5 @@
+// Section 3: The TypeScript Compiler (and its Configuration)
+
 let test = 0;
 
 // Using Watch Mode -->
@@ -166,6 +168,6 @@ Place breakpoints.
 Go to 'Run' --> 'Start Debugging'(F5)
 Select environment(for the time being, let's use Chrome)
 It will redirect to 'launch.json' file. Configure it.
-  Set "url" : "http://localhost:3000" (That's where our development server is running)
+  Set "url" : "http://localhost:3000" (That's where our development server should be running.)
 Run 'Start Debugging'(F5)
 */

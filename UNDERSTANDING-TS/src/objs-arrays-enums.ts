@@ -1,3 +1,5 @@
+// Section 2: TypeScript Basics & Basic Types
+
 // Objects -->
 
 // const person = {
@@ -99,8 +101,7 @@ for (let hobby of person.hobbies) {
 // A tuple looks just like an array. BUT actually is a 'fixed length' and 'fixed type' array.
 // A 'Tuple' should have exactly TWO elements.
 
-// Downside of above usage -->
-// role: [2, "author"] (from 'person' object)
+// Downside of above usage --> role: [2, "author"] (from 'person' object)
 // TypeScript inferred that 'role' is as an arry which might hold even 'strings' OR 'numbers'
 // Here(Before assigning explicit object type to person), TypeScript ONLY knows that 'role' should be of type 'string' OR 'number' array.
 
