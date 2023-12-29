@@ -115,5 +115,9 @@
   },
   "exclude": ["node_modules"], // This would be the default setting even if you don't mention this property at all
   // "exclude": ["basics.ts", "node_modules"]
-  "include": ["src/app.ts", "src/analytics/analytics.ts"]
+  "include": [
+    "src/app.ts",
+    "src/compiler-configs.ts",
+    "src/analytics/analytics.ts"
+  ]
 }
