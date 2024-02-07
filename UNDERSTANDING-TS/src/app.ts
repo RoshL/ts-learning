@@ -1,1 +1,1 @@
-// Section 4: Next-generation JavaScript & TypeScript
+// Section 5: Classes & Interfaces
