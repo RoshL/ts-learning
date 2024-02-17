@@ -210,7 +210,7 @@ ERROR: Property 'fiscalYear' does not exist on type 'AccountingDepartment'. Did 
 
 // Inheritance with "Abstract Classes"
 /* 
-Sometimes you just don't want the offer the "option" of overriding a method because that always exists.
+Sometimes you just do NOT want to offer the "option" of overriding a method because that always exists.
 You instead want to "force" the devs extending a certain class to override a certain method.
 
 Scenario :-
