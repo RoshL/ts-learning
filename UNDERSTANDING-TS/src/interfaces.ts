@@ -140,7 +140,7 @@ So, the Interfaces are useful in situations where we know that we wanna have a c
 
 // Interfaces as Function Types (#077)
 /* 
-Interfaces can also be used to define the structure of a fuction as well. (as a replacement for function types) . 
+Interfaces can also be used to define the structure of a function as well. (as a replacement for function types) . 
 */
 // Using custom types
 type AddFn1 = (a: number, b: number) => number;

@@ -70,7 +70,7 @@ class Department {
   private readonly id: string;
   name: string; 
 
-  Therefore, often you might find yourself writing definitions for those fields(private/public) like this at the top, and then just repeat all of them down there in the constructor fuction, just to initialize these values here.
+  Therefore, often you might find yourself writing definitions for those fields(private/public) like this at the top, and then just repeat all of them down there in the constructor function, just to initialize these values here.
 
   constructor(id: string, n: string) {
     this.id = id;
@@ -185,7 +185,7 @@ accounting.addReport('Something went wrong...');
 accounting.printReports(); // ['Something went wrong...']
 
 // Getters & Setters
-// Getter : A property, where you execute a fuction/method, when you retrieve a value. That allows developer to add more complex logic.
+// Getter : A property, where you execute a function/method, when you retrieve a value. That allows developer to add more complex logic.
 console.log(accounting.mostRecentReport); // Something went wrong...
 // accounting.mostRecentReport = ''; // Please pass in valid value!
 accounting.mostRecentReport = 'Year End Report';
