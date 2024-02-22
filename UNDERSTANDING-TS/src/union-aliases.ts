@@ -4,36 +4,36 @@
 function combine(
   input1: number | string,
   input2: number | string,
-  resultConversion: "as-number" | "as-text"
+  resultConversion: 'as-number' | 'as-text'
 ) {
   let result;
   // runtime checking for union types
-  if (typeof input1 === "number" && typeof input2 === "number") {
+  if (typeof input1 === 'number' && typeof input2 === 'number') {
     result = input1 + input2;
   } else {
     result = input1.toString() + input2.toString();
   }
-  if (resultConversion === "as-number") {
+  if (resultConversion === 'as-number') {
     return +result;
   } else {
     return result.toString();
   }
 }
 
-const combinedAgesAsNum = combine(30, 26, "as-number");
+const combinedAgesAsNum = combine(30, 26, 'as-number');
 console.log(combinedAgesAsNum); // 56
-const combinedAgesAsText = combine(30, 26, "as-text");
+const combinedAgesAsText = combine(30, 26, 'as-text');
 console.log(combinedAgesAsText); // '56'
 
-const combinedNames = combine("Max", "Anna", "as-text");
+const combinedNames = combine('Max', 'Anna', 'as-text');
 console.log(combinedNames); // 'MaxAnna'
 
-const combinedStringAgesAsNum = combine("30", "26", "as-number");
+const combinedStringAgesAsNum = combine('30', '26', 'as-number');
 console.log(combinedStringAgesAsNum); // 3026
-const combinedStringAgesAsText = combine("30", "26", "as-text");
+const combinedStringAgesAsText = combine('30', '26', 'as-text');
 console.log(combinedStringAgesAsText); // '3026'
 
-const combineMix = combine(30, "Rosh", "as-text");
+const combineMix = combine(30, 'Rosh', 'as-text');
 console.log(combineMix); // '30Rosh'
 
 // Literal Types (on top of union types) -->
@@ -59,22 +59,22 @@ You might want to create a new type which can be replaced with our union type.
 FIX: You can create an alias, with 'type' keyword.
 */
 
-type Combinable = number | string; // A re-usable type alias
-type ConversionDescriptor = "as-number" | "as-text"; // Alias for literal types
+type CombinableNS = number | string; // A re-usable type alias
+type ConversionDescriptor = 'as-number' | 'as-text'; // Alias for literal types
 
 function combine1(
-  input1: Combinable,
-  input2: Combinable,
+  input1: CombinableNS,
+  input2: CombinableNS,
   resultConversion: ConversionDescriptor
 ) {
   let result;
   // runtime checking for union types
-  if (typeof input1 === "number" && typeof input2 === "number") {
+  if (typeof input1 === 'number' && typeof input2 === 'number') {
     result = input1 + input2;
   } else {
     result = input1.toString() + input2.toString();
   }
-  if (resultConversion === "as-number") {
+  if (resultConversion === 'as-number') {
     return +result;
   } else {
     return result.toString();

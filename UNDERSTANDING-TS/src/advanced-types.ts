@@ -387,12 +387,12 @@ This is where 'Function Overloads' can help us.
 */
 
 // Function Overloads Example =>
-function add(a: number, b: number): number; // Function Overloads
+function addV2(a: number, b: number): number; // Function Overloads
 // function add(n: number): number; // This function overload signature is not compatible with its implementation signature.
-function add(a: string, b: string): string; // Function Overloads
-function add(a: string, b: number): string; // Function Overloads
-function add(a: number, b: string): string; // Function Overloads
-function add(a: Combinable, b: Combinable) {
+function addV2(a: string, b: string): string; // Function Overloads
+function addV2(a: string, b: number): string; // Function Overloads
+function addV2(a: number, b: string): string; // Function Overloads
+function addV2(a: Combinable, b: Combinable) {
   // Function Implementation
   if (typeof a === 'string' || typeof b === 'string') {
     return a.toString() + ' ' + b.toString();
@@ -400,10 +400,10 @@ function add(a: Combinable, b: Combinable) {
   return a + b;
 }
 
-const result1 = add(1, 5); // Now TypeScript infers the real type correctly -->  number
+const result1 = addV2(1, 5); // Now TypeScript infers the real type correctly -->  number
 console.log(result1); // 6
 
-const result2 = add('Roshani', 'Lakmali'); // Now TypeScript infers the real type correctly -->  string
+const result2 = addV2('Roshani', 'Lakmali'); // Now TypeScript infers the real type correctly -->  string
 console.log(result2); // Roshani Lakmali
 
 // Now that TypeScript exactly knows the type of 'result2' is 'string', it allows us to call 'string specific methods' on 'result2'.

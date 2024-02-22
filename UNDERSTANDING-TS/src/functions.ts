@@ -1,22 +1,22 @@
 // Section 2: TypeScript Basics & Basic Types
 
 // Function Return Types and "void" -->
-function add(n1: number, n2: number): number {
+function addFn(n1: number, n2: number): number {
   return n1 + n2;
 }
 // However, it's good to let TypeScript do its job regarding type inference.
 // You should NOT set the type explicitly, unless there is a specific reason to do so.
 
 function printResult1(num: number): void {
-  console.log("Result: " + num);
+  console.log('Result: ' + num);
 }
-printResult1(add(5, 12));
+printResult1(addFn(5, 12));
 //      Result: 17
 // Return type of printResult1 will always be 'void', even if we did NOT define it as above.
 
 // Here, we're not returning anything. So, TypeScript inferres the type of 'printResult1' function as a special type, 'void'.
 
-console.log(printResult1(add(5, 12)));
+console.log(printResult1(addFn(5, 12)));
 //      Result: 17
 //      undefined
 
@@ -67,7 +67,7 @@ console.log(combineValues(8, 8));
 // 'Function Types' are types that describe a function regarding its parameters and the return value.
 
 let combineValues: (a: number, b: number) => number;
-combineValues = add;
+combineValues = addFn;
 console.log(combineValues(8, 8)); // 16
 
 // combineValues = printResult1; // NOW it complains about this mismatch at compile time, just as we expect

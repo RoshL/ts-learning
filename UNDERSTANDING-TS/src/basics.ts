@@ -1,8 +1,8 @@
 // Section 2: TypeScript Basics & Basic Types
 
-console.log("Your code goes here...");
+console.log('Your code goes here...');
 
-function add1(n1: number, n2: number, showResult: boolean, phrase: string) {
+function add0(n1: number, n2: number, showResult: boolean, phrase: string) {
   // if(typeof n1 !== 'number'|| typeof n2 !== 'number'){
   //   throw new Error('Incorrect Input')
   // } // JS way of type checking
@@ -12,7 +12,7 @@ function add1(n1: number, n2: number, showResult: boolean, phrase: string) {
 }
 
 const printResult = true;
-const resultPhrase = "Result is";
+const resultPhrase = 'Result is';
 
 // TypeScript has a built-in feature called 'Type Inference'.
 // e.g. TS understands that 'number1' will always be a type of 'number', because you initialize it with a number.
@@ -24,6 +24,6 @@ let number4: number;
 number4 = 10; // understands as "let number4: number"
 // number4 = "10"; // Error: Type 'string' is not assignable to type 'number'
 
-add1(number1, number2, printResult, resultPhrase);
+add0(number1, number2, printResult, resultPhrase);
 // const result = add1(number1, number2, printResult);
 // console.log(result);
